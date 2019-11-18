@@ -1,2 +1,3 @@
-# html_learning
-Notes on HTML
+# HTML
+
+Notes on HTML programming
