@@ -6,8 +6,8 @@
 
 ## Builtin form validation
 
-* required attribute
-* pattern attribute - accepts **regex** as its value.
+* **required** attribute
+* **pattern** attribute - accepts **regex** as its value.
 * minlength, maxlegth attributes with `<input>`(type=text) and `<textarea>`
 * min, max attributes
 

@@ -2,11 +2,11 @@
 
 ## Table caption
 
-**&lt;caption&gt;** element - caption to the table describing its contents. Caption element is both visible and accessible.
+`<caption>` element - caption to the table describing its contents. Caption element is both visible and accessible.
 
 ## Structuring table contents
 
-**&lt;thead&gt;**, **&lt;tbody&gt;** and **&lt;tfoot&gt;** - elements for marking up header, body and footer of the table respectively. Useful in styling and layout.
+`<thead>`, `<tbody>` and `<tfoot>` - elements for marking up header, body and footer of the table respectively. Useful in styling and layout.
 
 ```HTML
 <style>
@@ -85,7 +85,7 @@ caption {
       <td></td>
       <td></td>
     </tr>
-        <tr>
+    <tr>
       <th scope="row">Venus</th>
       <td></td>
       <td></td>
@@ -97,7 +97,7 @@ caption {
       <td></td>
       <td></td>
     </tr>
-        <tr>
+    <tr>
       <th scope="row">Earth</th>
       <td></td>
       <td></td>
@@ -109,7 +109,7 @@ caption {
       <td></td>
       <td></td>
     </tr>
-        <tr>
+    <tr>
       <th scope="row">Mars</th>
       <td></td>
       <td></td>
@@ -121,9 +121,9 @@ caption {
       <td></td>
       <td></td>
     </tr>
-        <tr>
+    <tr>
       <th rowspan="4" scope="rowgroup">Jovian</th>
- <th rowspan="2" scope="rowgroup">Gas giants</th>
+      <th rowspan="2" scope="rowgroup">Gas giants</th>
       <th scope="row">Jupiter</th>
       <td></td>
       <td></td>
@@ -135,7 +135,7 @@ caption {
       <td></td>
       <td></td>
     </tr>
-        <tr>
+    <tr>
       <th scope="row">Saturn</th>
       <td></td>
       <td></td>
@@ -147,8 +147,8 @@ caption {
       <td></td>
       <td></td>
     </tr>
-        <tr>
- <th rowspan="2" scope="rowgroup">Ice giants</th>
+    <tr>
+      <th rowspan="2" scope="rowgroup">Ice giants</th>
       <th scope="row">Uranus</th>
       <td></td>
       <td></td>
@@ -160,7 +160,7 @@ caption {
       <td></td>
       <td></td>
     </tr>
-        <tr>
+    <tr>
       <th scope="row">Neptune</th>
       <td></td>
       <td></td>
@@ -172,7 +172,7 @@ caption {
       <td></td>
       <td></td>
     </tr>
-        <tr>
+    <tr>
       <th colspan="2" scope="rowgroup">Dwarf Planets</th>
       <th scope="row">Pluto</th>
       <td></td>
@@ -191,13 +191,15 @@ caption {
 
 ## Nesting tables
 
-Achieved by placing complete structure inside another **&lt;table&gt;** element. Not recommended practice, but possible.
+Achieved by placing complete structure inside another `<table>` element. Not recommended practice, but possible.
 
 ## Tables for visually impaired users
 
-* using scope attribute in row and column headers.
+* Using scope attribute in row and column headers.
 
-* Assign every **th** element an **id** attribute and then associate those **id** attribute values in the **headers** attribute on each **td** element. **This approach is more verbose.**
+OR
+
+* Assign every **th** element an **id** attribute and then associate those **id** attribute values in the **headers** attribute on each **td** element. **This approach is more verbose compared to using scope attribute.**
 
 ## References
 

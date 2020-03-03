@@ -1,12 +1,12 @@
 # HTML Table Basics
 
-HTML tables- used for representing tabular data. **Donot use** tables for web page layouts.
+HTML tables - used for representing tabular data. **Donot use** tables for web page layouts.
 
 **NOTE**: A table cell contains the data and can span over multiple rows or columns.
 
 ## HTML table
 
-Table is enclosed within **&lt;table&gt;** tag. **&lt;td&gt;** represents a table cell containing **table data**. **&lt;tr&gt;** for **table row**.
+Table is enclosed within `<table>` tag. `<td>` represents a table cell containing **table data**. `<tr>` for **table row**.
 
 ```HTML
 <table>
@@ -31,7 +31,7 @@ Table is enclosed within **&lt;table&gt;** tag. **&lt;td&gt;** represents a tabl
 
 ## Table headers
 
-**&lt;th&gt;** element for defining **table headers**. **scope** attribute associates row or column with the data they span. This attribute makes the table more **accessible**.
+`<th>` element for defining **table headers**. **scope** attribute associates row or column with the data they span. This attribute makes the table more **accessible**.
 
 ```HTML
 <!-- "th" can be placed alongside "td" and headers can be part of rows or columns -->
@@ -91,11 +91,11 @@ Table is enclosed within **&lt;table&gt;** tag. **&lt;td&gt;** represents a tabl
 
 ## Common styling to columns
 
-**&lt;col&gt;** and **&lt;colgroup&gt;** elements. Helps reuse styling. **&lt;colgroup&gt;** consists of **&lt;col&gt;** elements, where each **&lt;col&gt;** represents a column(not a cell) in the table.
+`<col>` and `<colgroup>` elements. Helps reuse styling. `<colgroup>` consists of `<col>` elements, where each `<col>` represents a column(**not a cell**) in the table.
 
-**&lt;col&gt;** element also contains **span** attribute that contains the consecutive columns this element spans.
+`<col>` element also contains **span** attribute that contains the consecutive columns this element spans.
 
-**NOTE**: Styling applied to **&lt;col&gt;** elements is applied to all columns as mentioned with the **span** attribute. Default value for span is 1, which makes **&lt;col&gt;** element represent a single table column(not table cell) by default.
+**NOTE**: Styling applied to `<col>` elements is applied to all columns as mentioned with the **span** attribute. Default value for span is 1, which makes `<col>` element represent a single table column(not table cell) by default.
 
 ```HTML
 <style>

@@ -4,7 +4,7 @@ Type and see how the code snippets render  with **codepen.io**.
 
 ## Div section
 
-**&lt;div&gt;** is a generic container for flow content. Being a block element, it can hold both block and inline elements. It is generally used to group elements together in a container and apply custom styling using the **class** and **id** attributes.
+`<div>` is a generic container for flow content. Being a block element, it can hold both block and inline elements. It is generally used to group elements together in a container and apply custom styling using the **class** and **id** attributes.
 Think of this element like the default case in switch statement in programming languages. If the content doesnot semantically fit in to any other html element(article, section, nav) then the content is placed inside div.
 
 ## Description lists
@@ -47,13 +47,13 @@ URL of the source (if the content is obtained from web) is mentioned in the **ci
 
 ### Inline quotations
 
-To quote a content inline, **&lt;q&gt;** tag is used. Intended for short quotations.
+To quote a content inline, `<q>` tag is used. Intended for short quotations.
 
 ```HTML
 <p>According to <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">wikipedia</a> Cascading Style Sheets (<abbr>CSS</abbr>) is a <q cite="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">style sheet language used for describing the presentation of a document written in a markup language like HTML</q></p>
 ```
 
-**NOTE**: While content in the **cite** attribute is useful to screen readers, they aren't displayed on the browser. **`<cite>`** HTML element is used when the content needs to be rendered in the browser. If the citation is from website,  its a good practice to mention the website name in the **cite** element and enclose it inside **&lt;a&gt;** tag with the url to the webpage containing the quotation.
+**NOTE**: While content in the **cite** attribute is useful to screen readers, they aren't displayed on the browser. **`<cite>`** HTML element is used when the content needs to be rendered in the browser. If the citation is from website,  its a good practice to mention the website name in the **cite** element and enclose it inside `<a>` tag with the url to the webpage containing the quotation.
 
 ## Abbreviations
 
@@ -65,7 +65,7 @@ To quote a content inline, **&lt;q&gt;** tag is used. Intended for short quotati
 
 ## Contact details
 
-**&lt;address&gt;** html element is meant for marking up the contact details of the person who wrote the HTML document.
+`<address>` html element is meant for marking up the contact details of the person who wrote the HTML document.
 
 ## Superscript and subscript
 
@@ -79,11 +79,11 @@ Used in
 <p> Benzene chemical formula C<sub>6</sub>H<sub>6</sub></p>
 ```
 
-## Marking up Computer code
+## Marking up computer code
 
-* **&lt;code&gt;** - marking up computer code. Usually this element is used along with **&lt;pre&gt;** element.
+* `<code>` - marking up computer code. Usually this element is used along with `<pre>` element.
 
-* **&lt;pre&gt;** - Stands for preformatted text. Retains the formatting of the text. Used to mark up block of computer code while retaining the formatting.
+* `<pre>` - Stands for preformatted text. Retains the formatting of the text. Used to mark up block of computer code while retaining the formatting.
 
   ```HTML
   <pre>
@@ -98,20 +98,20 @@ Used in
   </pre>
   ```
 
-* **&lt;var&gt;** - Marking up variable names
+* `<var>` - Marking up variable names
 
   ```HTML
   <p> Mathematical formula (<var>a</var> + <var>b</var>)<sup>2</sup> = <var>a</var><sup>2</sup> + <var>b</var><sup>2</sup> + 2 * <var>a</var> * <var>b</var></p>
   ```
 
-* **&lt;kdb&gt;** - marking up keyboard input entered in to computer
+* `<kbd>` - marking up keyboard input entered in to computer
 
   ```HTML
   <!-- shell prompt -->
   <p>girish@girish-computer:~ $ <kbd>ping -c 1 github.com</kbd></p>
   ```
 
-* **&lt;samp&gt;** - marking up output of computer program
+* `<samp>` - marking up output of computer program
 
   ```HTML
   <p>girish@girish-computer:~ $ <kbd>ping -c 1 github.com</kbd>
@@ -128,7 +128,7 @@ Used in
 
 ## Marking up times and dates
 
-**&lt;time&gt;** element is used for marking up time and date. Makes the time human readable at the same time machine readable.
+`<time>` element is used for marking up time and date. Makes the time human readable at the same time machine readable.
 
 ```HTML
 <!-- <time datetime="machine readable time">Human readable time</time> -->
@@ -137,7 +137,7 @@ Used in
 
 ## Text highlighting
 
-**&lt;mark&gt;** is used to highlight the text.
+`<mark>` is used to highlight the text.
 
 ```HTML
 <ul>
@@ -152,7 +152,7 @@ Used in
 
 ## Text strikethrough
 
-Text that are no longer relevant or deprecated are enclosed inside **&lt;s&gt;** element. The text will be displayed with line through it.
+Text that are no longer relevant or deprecated are enclosed inside `<s>` element. The text will be displayed with line through it.
 
 ```HTML
 <p>From rails 5, <code><s>before_filter</s></code> is deprecated and should be replaced with <code>before_action</code></p>
@@ -160,7 +160,7 @@ Text that are no longer relevant or deprecated are enclosed inside **&lt;s&gt;**
 
 ## Marking up text editing and differences
 
-To markup a document, highlighting what was inserted and deleted between the two versions of the document, **&lt;ins&gt;** and **&lt;del&gt;** methods are used.
+To markup a document, highlighting what was inserted and deleted between the two versions of the document, `<ins>` and `<del>` methods are used.
 
 ```HTML
 <p>
@@ -170,7 +170,7 @@ There is <del>nothing</del> <ins>no code</ins> either good or bad, but <del>thin
 
 ## Small element
 
-The HTML **&lt;small&gt;** element makes the text font size one size smaller (for example, from large to medium, or from small to x-small) down to the browser's minimum font size. This element is used for representing side-comments and small print, including copyright and legal text, independent of its styled presentation.
+The HTML `<small>` element makes the text font size one size smaller (for example, from large to medium, or from small to x-small) down to the browser's minimum font size. This element is used for representing side-comments and small print, including copyright and legal text, independent of its styled presentation.
 
 ```HTML
 <p>MDN Web Docs is a learning platform for Web technologies and the software that powers the Web.</p>
@@ -180,7 +180,7 @@ The HTML **&lt;small&gt;** element makes the text font size one size smaller (fo
 
 ## Span element
 
-**&lt;span&gt;** (generic inline container) is equivalent in usage to **&lt;div&gt;**(generic block container), except that its an inline element. Any text which does not semantically belong to any other inline element is enclosed inside **&lt;span&gt;**. It is used for group elements to apply custom styling.
+`<span>` (generic inline container) is equivalent in usage to `<div>`(generic block container), except that its an inline element. Any text which does not semantically belong to any other inline element is enclosed inside `<span>`. It is used for group elements to apply custom styling.
 
 ```HTML
 <p>Gradually add the <span class="ingredient" style="font-style: italic;">olive oil</span> while running the blender slowly.</p>

@@ -51,7 +51,7 @@ values entered saved for autocomplete later. styled differently compared to a no
 <input type="search" id="search" name="search" placeholder="Type here">
 ```
 
-### Phoen number field
+### Phone number field
 
 No special validation provided.
 
@@ -139,19 +139,37 @@ Multiple checkboxes can be in checked state.
 <fieldset class="group">
   <legend>Select standard pizza toppings</legend>
   <ul class="checkbox">
-    <li><input type="checkbox" id="cb1" value="pepperoni" checked /><label for="cb1">Pepperoni</label></li>
-    <li><input type="checkbox" id="cb2" value="sausage" /><label for="cb2">Sausage</label></li>
-    <li><input type="checkbox" id="cb3" value="mushrooms" /><label for="cb3">Mushrooms</label></li>
-    <li><input type="checkbox" id="cb4" value="onions" /><label for="cb4">Onions</label></li>
-    <li><input type="checkbox" id="cb5" value="gpeppers" /><label for="cb5">Green Peppers</label></li>
-    <li><input type="checkbox" id="cb6" value="xcheese" checked /><label for="cb6>">Extra Cheese</label></li>
+    <li>
+      <input type="checkbox" id="cb1" value="pepperoni" checked />
+      <label for="cb1">Pepperoni</label>
+    </li>
+    <li>
+      <input type="checkbox" id="cb2" value="sausage" />
+      <label for="cb2">Sausage</label>
+    </li>
+    <li>
+      <input type="checkbox" id="cb3" value="mushrooms" />
+      <label for="cb3">Mushrooms</label>
+    </li>
+    <li>
+      <input type="checkbox" id="cb4" value="onions" />
+      <label for="cb4">Onions</label>
+    </li>
+    <li>
+      <input type="checkbox" id="cb5" value="gpeppers" />
+      <label for="cb5">Green Peppers</label>
+    </li>
+    <li>
+      <input type="checkbox" id="cb6" value="xcheese" checked />
+      <label for="cb6>">Extra Cheese</label>
+    </li>
   </ul>
 </fieldset>
 ```
 
 ### Radio button
 
-Only one radio button in a group can be in checked state at any point in time.
+**Only one radio button** in a group can be in **checked** state at any point in time.
 
 ```HTML
 <fieldset>
@@ -257,8 +275,10 @@ Important attributes are
 <input type="file" id="profile_picture" name="profile_picture" accept="image/*">
 
 <!-- accept only png and jpeg -->
-<input type="file" id="images" name="iamges" accept="image/png, image/jpeg" multiple>
+<input type="file" id="images" name="images" accept="image/png, image/jpeg" multiple>
 ```
+
+**NOTE**: Form should have the **enctype** attribute with value **multipart/form-data**, if the form contains any input widget of type **file**
 
 ### Hidden
 

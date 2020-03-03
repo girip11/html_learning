@@ -26,11 +26,11 @@ Head tag contains the metadata of the HTML document. Usually metadata of an HTML
 
 ## Title of HTML Document
 
- Title of an HTML document is assigned via the **&lt;title&gt;** element. This title gets displayed in the browser tab and is usually used as the document name while bookmarking.
+ Title of an HTML document is assigned via the `<title>` element. This title gets displayed in the browser tab and is usually used as the document name while bookmarking.
 
 ## Standard metadata of HTML document
 
-Metadata like author, description of HTML document can be added via the **&lt;meta&gt;** element.  
+Metadata like author, description of HTML document can be added via the `<meta>` element.  
 
 ```HTML
   <!-- meta element is an empty element. No closing tags required -->
@@ -59,7 +59,7 @@ Metadata like author, description of HTML document can be added via the **&lt;me
 
 ## Adding Icon to the HTML document
 
-Icon can be added to the HTML document via the **&lt;link&gt;** element. Link element is also an empty element.
+Icon can be added to the HTML document via the `<link>` element. Link element is also an empty element.
 
 ```HTML
   <!-- rel attribute stands for relation between the HTML element and the href attribute. href stands for hypertext reference. This attribute contains the source file used by the HTML element-->
@@ -76,7 +76,7 @@ Link to external CSS scripts can be added via the link element.
 <link rel="stylesheet" type="text/css" href="http://mysite.com/styles.css">
 ```
 
-Internally style can be added using the **&lt;style&gt;** element.
+Internally style can be added using the `<style>` element.
 
 ```HTML
 <!DOCTYPE html>
@@ -96,7 +96,7 @@ Internally style can be added using the **&lt;style&gt;** element.
 
 ## Adding Javascript to the HTML document
 
-* Internal or external Javascript can be added via the **&lt;script&gt;** element. These scripts can also be added in body section. Adding JS scripts at the end of the body is preferred if JS code performs any operation on any HTML element inside the body, so that the HTML element is available for JS code to act up on.
+* Internal or external Javascript can be added via the `<script>` element. These scripts can also be added in body section. Adding JS scripts at the end of the body is preferred if JS code performs any operation on any HTML element inside the body, so that the HTML element is available for JS code to act up on.
 
 ```HTML
     <!-- Internal java script -->
@@ -109,7 +109,7 @@ Internally style can be added using the **&lt;style&gt;** element.
 
 ## Adding base url at document level
 
-We can specify the base URL at document level using the **&lt;base&gt;** element. This is an empty html element, so doesnot need closing tags. In case of multiple base elements mentioned in the same document, the first one in the document gets priority.
+We can specify the base URL at document level using the `<base>` element. This is an empty html element, so doesnot need closing tags. In case of multiple base elements mentioned in the same document, the first one in the document gets priority.
 
 ```HTML
 <!-- If this element is to be specified with href attribute, this element should be placed before all other HTML elements that can contain URL values in the attributes. For instance, it should appear before link and script elements in the head section-->

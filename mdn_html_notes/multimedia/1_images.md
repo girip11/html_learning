@@ -19,7 +19,7 @@ By default <img> tag takes the size of the image it is pointing to.-->
 
 ## Captioning images
 
-**&lt;figure&gt;** element along with **&lt;figcaption&gt;** can provide captions to the image. **&lt;figure&gt;** can contain many images, audio, video, code (enclosed in **&lt;pre&gt;**), equations, tables.
+`<figure>` element along with `<figcaption>` can provide captions to the image. `<figure>` can contain many images, audio, video, code (enclosed in `<pre>`), equations, tables.
 
 ```HTML
 <figure>

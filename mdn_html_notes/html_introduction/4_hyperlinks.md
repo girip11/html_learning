@@ -2,7 +2,7 @@
 
 ## Anatomy of a link
 
-Links are represented using anchor tags(&lt;a&gt;) in HTML. **href** attribute contains the URL location and the title contains the description of what the URL is about.
+Links are represented using anchor tags(`<a>`) in HTML. **href** attribute contains the URL location and the title contains the description of what the URL is about.
 
 ```HTML
 <!-- <a href="URL" title="URL title for tooltip"> Link Text</a> -->
@@ -21,11 +21,11 @@ Block level elements can be turned in to a link be embedding them inside the anc
 
 ## Link to a HTML document fragment
 
-Assign **id** attribute to the HTML element to which the link should point to. Common practice is to assign id to a specific heading on the document. That section can be referred  in the same HTML document in the format `href="#id"`. If the section is referenced in another html document, then in the href attribute mention the html document followed by hash/pound symbol `href="doc.html#id"`.
+Assign **id** attribute to the HTML element to which the link should point to. Common practice is to assign `id` to a **specific heading** on the document. That section can be referred in the same HTML document in the format `href="#id"`. If the section is referenced in another html document, then in the href attribute mention the html document followed by hash/pound symbol `href="doc.html#id"`.
 
 ```HTML
 <!-- Some heading in a HTML document called postgres.html-->
-<h2 id="installation">Postgresql installation</h2>
+<h2 id="#installation">Postgresql installation</h2>
 
 <!-- Link to the installation section looks like below. Clicking on this navigates to the html document and also navigates to the mentioned section in that document-->
 <a href="postgres.html#installation">Postgresql installation</a>
@@ -40,7 +40,7 @@ Assign **id** attribute to the HTML element to which the link should point to. C
 
 * Link text is **should describe** about the link **unlike** in this example `<a href="https://firefox.com/">Click here</a>`
 
-* Link text should not contain the URL itself. Such links lose accessibility.
+* Link text should not contain the URL itself. Such links lose **accessibility**.
 
 * Link text should be as short as possible
 
@@ -64,7 +64,7 @@ Assign **id** attribute to the HTML element to which the link should point to. C
   </a></p>
   ```
 
-* using **download** attribute helps to provide a default filename to save on trigeering the download.
+* Using **download** attribute helps to provide a default filename to save on trigeering the download.
 `<a href="https://www.ruby-lang.org/en/downloads/" title="Download ruby 2.6.3" download="ruby-2_6_3.exe">Download Ruby 2.6.3</a>`
 
 ## Email links

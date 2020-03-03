@@ -10,23 +10,23 @@
 
 ## HTML tags used for document structuring
 
-* **&lt;header&gt;** - contains header information. This element when placed inside body, contains the page level header information and when placed inside **&lt;article&gt;** or **&lt;section&gt;**, represents the section level header information.
+* `<header>` - contains header information. This element when placed inside body, contains the page level header information and when placed inside `<article>` or `<section>`, represents the section level header information.
 
-* **&lt;nav&gt;** - navigation bar. **&lt;nav&gt;** semantically cannot contain another **&lt;nav&gt;**. This element contains only the primary navigation links.
+* `<nav>` - navigation bar. `<nav>` semantically cannot contain another `<nav>`. This element contains only the primary navigation links.
 
-* **&lt;main&gt;** is used to enclose the document content area. There should be only one **&lt;main&gt;** element per document and placed as direct child of **&lt;body&gt;**. Within the **&lt;main&gt;** element, **&lt;article&gt;**, **&lt;section&gt;**, **&lt;div&gt;** are all used for sectioning the content.
+* `<main>` is used to enclose the document content area. There should be only one `<main>` element per document and placed as direct child of `<body>`. Within the `<main>` element, `<article>`, `<section>`, `<div>` are all used for sectioning the content.
 
-* **&lt;article&gt;** - contains content that makes sense on its own like a blog post.
+* `<article>` - contains content that makes sense on its own like a blog post.
 
-* **&lt;section&gt;** - contains content that forms a section of the document, for instance image section, map section in a document, sections in a blog post etc. Good practice to begin section with a heading.
+* `<section>` - contains content that forms a section of the document, for instance image section, map section in a document, sections in a blog post etc. Good practice to begin section with a heading.
 
-* **&lt;aside&gt;** is used for sidebar content and usually placed inside **&lt;main&gt;**
+* `<aside>` is used for sidebar content and usually placed inside `<main>`
 
-* **&lt;footer&gt;** - contains the footer information.
+* `<footer>` - contains the footer information.
 
-* **&lt;div&gt;** - generic container for the content. When a content can't be semantically associated with any of the sectioning elements mentioned above, then the content is enclosed inside **&lt;div&gt;** element.
+* `<div>` - generic container for the content. When a content can't be semantically associated with any of the sectioning elements mentioned above, then the content is enclosed inside `<div>` element.
 
-**NOTE**: **&lt;article&gt;** can be comprised of many **&lt;section&gt;**, or **&lt;section&gt;** can be comprised of many **&lt;article&gt;** based on the context.
+**NOTE**: `<article>` can be comprised of many `<section>`, or `<section>` can be comprised of many `<article>` based on the context.
 
 ## References
 
